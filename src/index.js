@@ -81,8 +81,54 @@ app.get('/omdb/getbyomdbid', async (req, res) => {
     res.status(200).send(resultado);
 });
 
+//Alumnos
+const alumnosArray = [];
+alumnosArray.push(new Alumno("Esteban Dido" , "22888444", 20));
+alumnosArray.push(new Alumno("Matias Queroso", "28946255", 51));
+alumnosArray.push(new Alumno("Elba Calao" , "32623391", 18));
 
 
+//1
+app.get('/alumnos', async (req, res) => {
+    try {
+        res.status(200).send(alumnosArray);
+    } catch (error) {
+        res.status(500).send('Error al obtener los alumnos');
+    }
+});
+
+//2
+app.get('/alumnos/:dni', async (req, res) => {
+    const {dni}= req.params.dni;
+    console.log(dni);
+    var alumno = alumnosArray.find(obj => obj.dni === dni);
+    res.status(500).send(alumno);
+});
+
+//3
+app.post('/alumnos', (req, res) => {
+    const objRecibido = req.body;
+    alumnosArray.push(objRecibido);
+    res.status(201).send("Created");
+});
+
+//4
+app.delete('/alumnos', (req, res) => {
+    try{
+        const dnirecibido = req.body;
+        var alumno = alumnosArray.findIndex(obj => obj.dni === dnirecibido);
+        var alumnos=alumnosArray.splice(alumno);
+        res.status(200).send("OK");
+    }
+    catch{
+        res.status(404).send("Not Found");
+    }
+   
+    
+});
+
+
+   
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

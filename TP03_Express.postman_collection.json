@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "c41f511e-6761-42f9-87ef-e85b96c6f063",
+		"name": "TP03_Express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alumnos",
+			"item": []
+		},
+		{
+			"name": "Matemática",
+			"item": [
+				{
+					"name": "EJ01",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/matematica/sumar?n1=10&n2=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"matematica",
+								"sumar"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "10"
+								},
+								{
+									"key": "n2",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EJ02",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/matematica/restar?n1=10&n2=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"matematica",
+								"restar"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "10"
+								},
+								{
+									"key": "n2",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EJ03",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/matematica/multiplicar?n1=10&n2=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"matematica",
+								"multiplicar"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "10"
+								},
+								{
+									"key": "n2",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EJ04",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/matematica/dividir?n1=10&n2=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"matematica",
+								"dividir"
+							],
+							"query": [
+								{
+									"key": "n1",
+									"value": "10"
+								},
+								{
+									"key": "n2",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OMDB",
+			"item": [
+				{
+					"name": "EJ01",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/omdb/searchbypage?search=cars&p=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"omdb",
+								"searchbypage"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "cars"
+								},
+								{
+									"key": "p",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EJ02",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/omdb/searchbypage?search=cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"omdb",
+								"searchbypage"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "cars"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EJ03",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/omdb/getbyomdbid?imdbID=tt1285016",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"omdb",
+								"getbyomdbid"
+							],
+							"query": [
+								{
+									"key": "imdbID",
+									"value": "tt1285016"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Index",
+			"item": [
+				{
+					"name": "EJ01",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EJ02",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/saludar/cami",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saludar",
+								"cami"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EJ03",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/validarfecha/2002/10/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"validarfecha",
+								"2002",
+								"10",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
