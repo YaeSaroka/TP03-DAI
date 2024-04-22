@@ -1,5 +1,5 @@
 class Alumno{
-    constructor(username, edad, DNI)
+    constructor(username, DNI, edad)
     {
         this.username= username;
         this.edad=edad;
